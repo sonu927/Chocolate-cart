@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate-Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to an external CSS stylesheet -->
+  </head>
+  <body class="">
+    <div class="container">
+      <header>
+        <h1>Your Chocolate Cart</h1>
+        <!-- Shopping cart icon and item quantity display -->
+        <div class="shopping">
+          <img
+            src="https://raw.githubusercontent.com/HoanghoDev/addtocardv2/773a2f3f4ef72d46fa2187b31211a7375524fa46/image/shopping.svg"
+          />
+          <span class="quantity">0</span>
+          <!-- The number of items in the cart -->
+        </div>
+      </header>
+
+      <!-- Container for displaying a list of chocolate products -->
+      <div class="list"></div>
+    </div>
+
+    <!-- Container for the shopping cart itself -->
+    <div class="card">
+      <h1>Pack</h1>
+      <!-- List of items added to the cart -->
+      <ul class="listCard"></ul>
+
+      <!-- Checkout section with total price and close button -->
+      <div class="checkOut">
+        <div class="total">0</div>
+        <!-- Total price of items in the cart -->
+        <div class="closeShopping">Close</div>
+        <!-- Button to close the shopping cart -->
+      </div>
+    </div>
+
+    <!-- Dialog box for displaying a message when the cart is full -->
+    <div id="dialog-box" class="hidden">
+      <p>Pack Of 8 Chocolate is Complete</p>
+      <p>You cannot add more than 8 chocolates to your pack.</p>
+      <button id="close-dialog-button">OK</button>
+      <!-- Button to close the dialog box -->
+    </div>
+
+    <!-- JavaScript code to handle cart functionality -->
+    <script src="index.js"></script>
+  </body>
+</html>
